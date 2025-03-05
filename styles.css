@@ -1,36 +1,37 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    
 }
 
-.header{
+/* Header */
+.header {
     padding: 0.5rem 2rem;
     display: flex;
     gap: 1rem;
     background-color: aqua;
     cursor: pointer;
 }
-.search-box{
+.search-box {
     width: 100%;
 }
 
 /* Navbar */
-.navbar{
+.navbar {
     padding: 0 2rem;
     display: flex;
     cursor: pointer;
+    align-items: center;
 }
-.logo{
+.logo {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
-.nav-menu{
+.nav-menu {
     width: 100%;
 }
-.nav-menu ul{
+.nav-menu ul {
     display: flex;
     list-style: none;
     gap: 1rem;
@@ -42,74 +43,69 @@ body{
 }
 
 /* Hero Section */
-
-.hero-section{
+.hero-section {
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
 }
-.hero-section img{
-    width: 1200px;
+.hero-section img {
+    width: 100%;
     object-fit: cover;
     height: 80vh;
 }
 
 /* Blog Section */
-
-.blog-section{
+.blog-section {
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     gap: 13rem;
+    flex-wrap: wrap;
 }
 
-.blog-section .blog-img{
+.blog-section .blog-img {
     width: 200px;
-} 
+}
 
 /* Testimonials Section */
-.testimonials-section{
+.testimonials-section {
     padding: 1rem 2rem;
-    
 }
-
-.testimonial-section-heading{
+.testimonial-section-heading {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.testimonials{
+.testimonials {
     display: flex;
     justify-content: center;
     gap: 8rem;
+    flex-wrap: wrap;
 }
-.testimonials-section h1{
+.testimonials-section h1 {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     display: block;
 }
-
-.testimonial{
+.testimonial {
     width: 14rem;
 }
-
-.testimonial-text{
+.testimonial-text {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: italic;
 }
-
-.testimonial-company h3{
+.testimonial-company h3 {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: bold;
     margin-bottom: 0;
 }
-.testimonial-company p{
+.testimonial-company p {
     margin-top: 0;
     padding-top: 0;
     font-family: "Montserrat", serif;
@@ -117,15 +113,13 @@ body{
     font-weight: 400;
     font-style: italic;
 }
-/* footer */
+
+/* Footer */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
 }
 .footer {
     background-color: #f8f8f8;
@@ -161,6 +155,7 @@ body{
     justify-content: center;
     gap: 15px;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 .nav-item {
     padding: 10px 15px;
@@ -176,4 +171,74 @@ body{
 .social-icons i {
     font-size: 24px;
     cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .hero-section img {
+        height: 60vh;
+    }
+    .blog-section {
+        gap: 5rem;
+    }
+    .testimonials {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section img {
+        height: 50vh;
+    }
+    .blog-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0.5rem;
+    }
+    .navbar {
+        padding: 0.5rem;
+    }
+    .hero-section img {
+        height: 40vh;
+    }
+    .blog-section {
+        padding: 1rem;
+    }
+    .testimonials {
+        padding: 1rem;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .subscribe-to-newsletter input {
+        width: 150px;
+    }
+    .social-icons {
+        gap: 10px;
+    }
 }
