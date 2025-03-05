@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    padding: 0.5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    background-color: aqua;
+    cursor: pointer;
+}
+.search-box{
+    width: 100%;
+}
+
+/* Navbar */
+.navbar{
+    padding: 0 2rem;
+    display: flex;
+    cursor: pointer;
+}
+.logo{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.nav-menu{
+    width: 100%;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: flex-end;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Hero Section */
+
+.hero-section{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+.hero-section img{
+    width: 1200px;
+    object-fit: cover;
+    height: 80vh;
+}
+
+/* Blog Section */
+
+.blog-section{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 13rem;
+}
+
+.blog-section .blog-img{
+    width: 200px;
+} 
+
+/* Testimonials Section */
+.testimonials-section{
+    padding: 1rem 2rem;
+    
+}
+
+.testimonial-section-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+.testimonials-section h1{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    display: block;
+}
+
+.testimonial{
+    width: 14rem;
+}
+
+.testimonial-text{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.testimonial-company h3{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    margin-bottom: 0;
+}
+.testimonial-company p{
+    margin-top: 0;
+    padding-top: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+/* footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.newsletter {
+    margin-bottom: 20px;
+}
+.newsletter h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.subscribe-to-newsletter input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.subscribe-btn {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.nav-item {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
